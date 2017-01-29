@@ -4,10 +4,49 @@
    Author's custom styles
    ========================================================================== */
 
+/** general **/
+
 body {
     padding: 0;
 }
 
+.button a,
+.button button {
+    background: #ff6347;
+    height: 45px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    width: 100%;
+    transition: background 100ms, color 100ms;    
+}
+.button a:hover,
+.button button:hover {
+    background: #F44336;
+}
+
+.button button:focus {
+    outline: none;
+}
+
+.slide-title {
+
+}
+
+.slide-subtitle {
+    margin-bottom: 7%;
+}
+.slide-subtitle div{
+    margin-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+.slide-subtitle span {
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+/** slide 1 **/
 .top-slide {
     height: 700px;
     height: 80vh;
@@ -38,31 +77,6 @@ body {
     margin-top: 5%;
 }
 
-/*.make-order-button a {
-    height: 100%;
-    width: 100%;
-    display: block;
-    margin: 0;
-}
-
-.make-order-button a span {
-    margin-top: 8px;
-    display: block;
-}*/
-
-.button a,
-.button button {
-    background: #ff6347;
-    height: 45px;
-    cursor: pointer;
-    padding: 0;
-    border: none;
-    width: 100%;
-}
-.button button:focus {
-    outline: none;
-}
-
 .or {
     margin-top: 35px;
 }
@@ -71,11 +85,99 @@ body {
     text-decoration: underline;
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+/** slide 2 **/
+
+.slide {
+
 }
 
+.about-me {
+    background-color: #dddddd;
+}
 
+.slide-2 .content {
+    margin-bottom: 6%;
+}
 
+.skills {
+    background: rgba(96, 125, 139, 0.24);
+    margin-bottom: 10%;
+}
+
+.skills .row {
+    margin-bottom: 1%;
+}
+
+.skill-image {
+
+}
+
+.skill-description {
+
+}
+
+.skill-title {
+
+}
+
+.skill-text {
+
+}
+
+.skill-icon-cover {
+    position: absolute;
+    height: 100%;
+}
+.skill-icon{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    text-align: center;
+}
+.skill-icon span {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #607D8B;
+}
+
+.portrait-row {
+    margin-bottom: 10%;
+}
+.portrait {
+    width: 25vw;
+    height: 25vw;
+    max-width: 400px;
+    max-height: 400px;
+    background-image: url(../img/portrait.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.last-feedback a {
+    color: #ff6347;
+    text-decoration: underline;
+}
+
+/** sm only **/
+@media (max-width: 991px) and (min-width: 768px){
+    .portrait {
+        width: 37vw;
+        height: 37vw;
+    }
+    .portrait-row {
+        margin-bottom: 5%;
+    }
+}
+
+/** xs **/
+@media (max-width: 767px){
+    .portrait {
+        width: 37vw;
+        height: 37vw;
+        margin-bottom: 19%;
+        border-radius: 50%;
+    }
+}
