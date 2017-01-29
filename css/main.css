@@ -174,10 +174,17 @@ body {
 
 /** xs **/
 @media (max-width: 767px){
+    .heading-text {
+        margin-top: 50%;
+    }
+    .top-slide {
+        height: 90vh;
+    }
     .portrait {
         width: 37vw;
         height: 37vw;
         margin-bottom: 19%;
         border-radius: 50%;
     }
+    
 }
