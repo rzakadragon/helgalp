@@ -4,19 +4,78 @@
    Author's custom styles
    ========================================================================== */
 
+body {
+    padding: 0;
+}
 
+.top-slide {
+    height: 700px;
+    height: 80vh;
 
+    background-color: #212121;
+    color: #EEEEEE;
 
+    background-image: url('../img/centering.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.heading-text {
+    margin-top: 25%;
+    margin-top: calc( 80vh/2 - 45px );
+    border: 2px solid #EEEEEE;
+}
+.heading-text h1 {
+    margin-bottom: 20px;
+}
 
+.subtitle {
+    margin-top: 2%;
+}
 
+.make-order-button {
+    margin-top: 5%;
+}
 
+/*.make-order-button a {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 0;
+}
 
+.make-order-button a span {
+    margin-top: 8px;
+    display: block;
+}*/
 
+.button a,
+.button button {
+    background: #ff6347;
+    height: 45px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    width: 100%;
+}
+.button button:focus {
+    outline: none;
+}
 
+.or {
+    margin-top: 35px;
+}
 
+.leave-feedback a{
+    text-decoration: underline;
+}
 
-
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 
 
 
