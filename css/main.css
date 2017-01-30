@@ -263,6 +263,11 @@ body {
     height: 40px;
     margin-bottom: 5%;
 }
+.show-more button:hover {
+    margin-bottom: 5.5%;
+    margin-top: -0.5%;
+}
+
 .show-more button span {
 
 }
@@ -304,14 +309,67 @@ body {
 }
 
 
+/** slide 5 **/
+.my-contacts {
+    background-color: #bdbdbd;
+}
+.contact-option {
+    background-color: #fafafa;
+    padding: 5%;
+    padding-bottom: 9%;
+    margin-bottom: 5%;
+}
+.contact-option a {
+    font-size: 18px;
+}
+
+.contact-social a {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    position: relative;
+    margin: 5%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.social-fb{
+    background-image: url('../img/social-fb.svg');
+}
+.social-vk{
+    background-image: url('../img/social-vk.svg');
+}
+.social-ok{
+    background-image: url('../img/social-ok.svg');
+}
+
+
 /** shadows **/
 .skill-description,
 .portrait,
 .last-feedback,
 .slide-3 .place-group,
-.service
+.service,
+.contact-option,
+.show-more button,
+.button button
 {
-    box-shadow: 5px 5px 5px #9E9E9E;
+    /*box-shadow: 5px 5px 5px #9E9E9E;*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.show-more button,
+.contact-social a,
+.button button
+{
+    transition: all 0.1s cubic-bezier(.25,.8,.25,1);
+}
+
+.show-more button:hover,
+.contact-social a:hover,
+.button button:hover
+{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 /** letter-spacing **/

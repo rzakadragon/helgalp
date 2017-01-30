@@ -14,6 +14,14 @@ jQuery(document).ready(function ($) {
         /** hide the button */
         $(this).hide()
     })
+
+    /** scroll to contacts whin click on call-to-action btn **/
+    $(".call-to-action").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contacts").offset().top
+        }, 1000);
+    });
+
 })
 
 var arr
