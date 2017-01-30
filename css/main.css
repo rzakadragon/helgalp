@@ -11,9 +11,9 @@ body {
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
-.button a,
-.button button {
-    background: #ff6347;
+ .button a,
+ .button button {
+    /*background: #ff6347;*/
     height: 45px;
     cursor: pointer;
     padding: 0;
@@ -21,9 +21,9 @@ body {
     width: 100%;
     transition: background 100ms, color 100ms;    
 }
-.button a:hover,
-.button button:hover {
-    background: #F44336;
+ .button a:hover,
+ .button button:hover {
+    /*background: #F44336;*/
 }
 
 .button button:focus {
@@ -91,6 +91,9 @@ body {
     text-decoration: underline;
 }
 
+a:hover, a:focus {
+    color: #359173;
+}
 /** slide 2 **/
 
 .slide {
@@ -138,7 +141,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: #607D8B;
+    color: #009688;
 }
 
 .portrait-row {
@@ -162,7 +165,7 @@ body {
     margin-bottom: 10%;
 }
 .last-feedback a {
-    color: #ff6347;
+    /*color: #ff6347;*/
     text-decoration: underline;
 }
 
@@ -263,9 +266,13 @@ body {
     height: 40px;
     margin-bottom: 5%;
 }
-.show-more button:hover {
+/*.show-more button:hover {
     margin-bottom: 5.5%;
     margin-top: -0.5%;
+}*/
+.btn-default:hover, 
+.btn-default:focus{
+    background-color: #fafafa;
 }
 
 .show-more button span {
@@ -300,7 +307,7 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 80px;
-    color: #607d8b;
+    color: #009688;
 }
 
 .service-title {
@@ -343,6 +350,97 @@ body {
     background-image: url('../img/social-ok.svg');
 }
 
+.message-header {
+    margin-bottom: 5%;
+}
+.message-header * {
+    display: inline-block;
+}
+
+/* form */
+form input, form textarea {
+    margin-bottom: 0.5em;
+    font-size: 17px;
+}
+input, textarea {
+    font-size: 0.8em;
+    font-family: 'proxima-nova-soft', sans-serif;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 0.5em;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+input:focus, textarea:focus {
+    border-color: #9E9E9E;
+    outline: none;
+    /*box-shadow: 0 0 5px 1px #9E9E9E;*/
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+/*#formview textarea {
+    height: 10.3em;
+}*/
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+button {
+    margin-top: 3%;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid #359173;
+    color: #359173;
+    background: transparent;
+    line-height: 1em;
+    padding: 0.6em 0.9em;
+    transition: all 0.3s ease-in-out;
+}
+
+label {
+    text-align: left;
+    width: 100%;
+    color: #424242;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/** slide 6 **/
+.feedback {
+    padding: 4%;
+    background: #FAFAFA;
+}
+.feedback button {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+/** footer **/
+footer {
+    background: #424242;
+    color: #F5F5F5;
+    padding: 4%;
+}
+footer a{
+    color: #F5F5F5;
+}
+footer .social-fb{
+    background-image: url('../img/social-fb2.svg');
+}
+footer .social-vk{
+    background-image: url('../img/social-vk2.svg');
+}
+footer .social-ok{
+    background-image: url('../img/social-ok2.svg');
+}
+footer .contact-social {
+    margin-top: 3%;
+}
+.autor {
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
 
 /** shadows **/
 .skill-description,
@@ -352,7 +450,8 @@ body {
 .service,
 .contact-option,
 .show-more button,
-.button button
+.button button,
+.feedback
 {
     /*box-shadow: 5px 5px 5px #9E9E9E;*/
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -362,14 +461,29 @@ body {
 .contact-social a,
 .button button
 {
-    transition: all 0.1s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.show-more button,
+.button button {
+    border: 2px solid #359173;
+    color: #359173;
 }
 
 .show-more button:hover,
 .contact-social a:hover,
-.button button:hover
+button:hover
 {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.show-more button:hover,
+button:hover
+{
+    border: 2px solid #00796B;
+    color: #00796B;
 }
 
 /** letter-spacing **/
@@ -381,14 +495,16 @@ body {
     letter-spacing: 5px;
 }
 
-.slide-subtitle
+.slide-subtitle,
+footer a
 {
     letter-spacing: 4px;
 }
 
 .button a,
 .button button,
-.place-group-title
+.place-group-title,
+footer
 {
     letter-spacing: 3px;
 }
