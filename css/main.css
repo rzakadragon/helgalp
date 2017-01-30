@@ -40,6 +40,7 @@ body {
 .slide-subtitle div{
     margin-bottom: 10px;
     border-bottom: 1px solid #616161;
+    padding: 0;
 }
 .slide-subtitle span {
     display: block;
@@ -68,10 +69,14 @@ body {
 }
 .heading-text h1 {
     margin-bottom: 20px;
+    letter-spacing: 7px;
 }
 
 .subtitle {
     margin-top: 2%;
+}
+.subtitle h2{
+    letter-spacing: 7px;
 }
 
 .make-order-button {
@@ -167,7 +172,7 @@ body {
 
 }
 .suggest-to-visit>div {
-    margin-bottom: 3%;
+    /*margin-bottom: 3%;*/
 }
 .slide-3 .place-group {
     min-height: 30vh;
@@ -204,6 +209,10 @@ body {
 .place-title {
     position: absolute;
     height: 100%;
+}
+.place-xs-title {
+    margin-bottom: 2%;
+    margin-top: 3%;
 }
 
 .place-image {
@@ -262,17 +271,74 @@ body {
     bottom: -10%;
 }
 
+/** slide 4 **/
+
+.my-service {
+    background-color: #fafafa;
+}
+
+.service {
+    background-color: whitesmoke;
+    margin-bottom: 5%;
+    padding-bottom: 4%;
+}
+
+.service-content {
+    position: relative;
+}
+.service-icon {
+    position: absolute;
+    height: 100%;
+}
+.service-icon span{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    color: #607d8b;
+}
+
+.service-title {
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
 
 /** shadows **/
-
 .skill-description,
 .portrait,
 .last-feedback,
-.slide-3 .place-group
+.slide-3 .place-group,
+.service
 {
     box-shadow: 5px 5px 5px #9E9E9E;
 }
 
+/** letter-spacing **/
+.slide-title,
+.top-slide,
+.place-xs-title,
+.service-title
+{
+    letter-spacing: 5px;
+}
+
+.slide-subtitle
+{
+    letter-spacing: 4px;
+}
+
+.button a,
+.button button,
+.place-group-title
+{
+    letter-spacing: 3px;
+}
+
+.place-title
+{
+    letter-spacing: 1px;
+}
 
 /** lg **/
 @media (min-width: 1200px){
@@ -326,8 +392,16 @@ body {
         height: auto;
     }
     .place-image {
-        width: 75vw;
-        height: 35vw;
+        width: 85vw;
+        height: 40vw;
+        margin-bottom: 5%;
+    }
+    .service-content ul {
+        padding-left: 9%;
+    }
+    .service-icon span{
+        font-size: 100px;
+        color: rgba(207, 216, 220, 0.54);
     }
 
 }
