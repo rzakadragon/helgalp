@@ -15,11 +15,20 @@ jQuery(document).ready(function ($) {
         $(this).hide()
     })
 
-    /** scroll to contacts whin click on call-to-action btn **/
+    /** scroll to contacts when click on call-to-action btn **/
     $(".call-to-action").click(function() {
     $('html, body').animate({
         scrollTop: $("#contacts").offset().top
         }, 1000);
+    });
+
+    /** smooth scroll when click on anchor */    
+    $(document).on('click', 'a.scroll', function(event){
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
     });
 
 })
