@@ -56,7 +56,7 @@ body {
     background-color: #212121;
     color: #EEEEEE;
 
-    background-image: url('../img/centering.svg');
+    background-image: url('../img/header.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,6 +70,7 @@ body {
     margin-top: 25%;
     margin-top: calc( 80vh/2 - 45px );
     border: 2px solid #EEEEEE;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 .heading-text h1 {
     margin-bottom: 20px;
@@ -89,10 +90,19 @@ body {
 
 .or {
     margin-top: 1%;
+    text-shadow: 1px 1px 3px black, 1px 1px 3px black, 1px 1px 3px black;
+}
+
+.leave-feedback {
+    text-shadow: 1px 1px 3px black, 1px 1px 3px black, 1px 1px 3px black;
 }
 
 .leave-feedback a{
     text-decoration: underline;
+}
+
+.leave-feedback:hover {
+    /*text-shadow: none;*/
 }
 
 a:hover, a:focus {
@@ -109,7 +119,7 @@ a:hover, a:focus {
 }
 
 .skills {
-    margin-bottom: 10%;
+    /*margin-bottom: 10%;*/
 }
 
 .skill-image {
@@ -490,6 +500,7 @@ footer .contact-social {
 .button button {
     border: 2px solid #359173;
     color: #359173;
+    background: rgba(238, 238, 238, 0.7);
 }
 
 .show-more button:hover,
